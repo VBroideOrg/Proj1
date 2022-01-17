@@ -27,8 +27,18 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Продажи.Form.ФормаДокумента</defaultObjectForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="50939a59-379e-4cae-adcd-8977d864d60d">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="c44242f5-5fcc-4ba3-a2fc-4cd862fe0c09">
     <producedTypes>
       <objectType typeId="04256e1a-dafb-4b34-b5d5-8d6e4ef8096b" valueTypeId="8aa3bbf1-9995-489d-aabf-64c3b1200837"/>
@@ -58,6 +68,23 @@
       <synonym>
         <key>ru</key>
         <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="befc5184-b1c1-4b6b-9952-a869181a0c79">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
       </synonym>
       <type>
         <types>Number</types>
